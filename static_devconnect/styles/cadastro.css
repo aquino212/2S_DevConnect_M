@@ -1,0 +1,158 @@
+/*Style da tela cadastro*/
+
+/* Container geral */
+#cadastro-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    gap: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Caixa de cadastro */
+.cadastro-container {
+    background-color: #3A4866;
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Logo */
+.logo-img {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+/* Texto acima do formulário */
+.cadastro-texto {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Formulário */
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Campo com label */
+.cadastro-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.cadastro-campo label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Inputs */
+.cadastro-campo input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2c3650;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+}
+
+.cadastro-campo input:focus {
+    outline: none;
+    background-color: #444f6e;
+}
+
+/* Upload de foto */
+.cadastro-campo input[type="file"] {
+    display: none;
+}
+
+.custom-file-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.custom-file-btn:hover {
+    background-color: #444f6e;
+}
+
+/* Botão principal */
+.cadastro-form button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.cadastro-form button:hover {
+    background-color: #2c3650;
+}
+
+/* Texto dos termos */
+.termos {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ddd;
+    line-height: 1.4em;
+}
+
+.termos a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.termos a:hover {
+    text-decoration: underline;
+}
+
+/* Caixa de login (já tem conta?) */
+.login-container {
+    background-color: #3A4866;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    max-width: 410px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.login-container a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

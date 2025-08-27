@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Cauhê">
+   <meta name="description" content="Tela de cadastro - DevConnect">
+
+   <title>Cadastro - DEVConnect</title>
+   <link rel="stylesheet" href="../styles/cadastro.css">
+</head>
+
+<body>
+   <main id="cadastro-main">
+
+      <section class="cadastro-container">
+         <!-- Logo -->
+         <img src="../assets/images/logo-devconnect-lg.svg" alt="Logo DevConnect" class="logo-img">
+
+         <p class="cadastro-texto">
+            Cadastre-se para comunidade <br> exclusiva de desenvolvedores(as).
+         </p>
+
+         <form class="cadastro-form">
+            
+            <div class="cadastro-campo">
+               <label for="nome">Nome e sobrenome</label>
+               <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="cadastro-campo">
+               <label for="usuario">Nome de usuário</label>
+               <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário" required>
+            </div>
+
+            <div class="cadastro-campo">
+               <label for="email">E-mail</label>
+               <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="cadastro-campo">
+               <label for="senha">Senha</label>
+               <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="cadastro-campo">
+               <label for="foto" class="custom-file-btn">Escolher Foto</label>
+               <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <button type="submit">Cadastrar-se</button>
+         </form>
+
+         <p class="termos">
+            Ao se cadastrar, você concorda com nossos <a href="#">Termos</a>,
+            <a href="#">Política de Dados</a> e <a href="#">Política de Cookies</a>.
+         </p>
+      </section>
+
+      <section class="login-container">
+         <p>Tem uma conta? <a href="#">Conecte-se</a></p>
+      </section>
+
+   </main>
+</body>
+
+</html>
