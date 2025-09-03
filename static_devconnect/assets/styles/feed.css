@@ -1,0 +1,175 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.container-flex-publi {
+    background-color: #3A4866;
+    /* height: 700px;*/
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#storys {
+    background-color: #3A4866;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 30px;
+}
+
+#storys::-webkit-scrollbar {
+    width: 0;
+}
+
+.card-story>button {
+    background-color: transparent;
+    border: none;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.card-story>button>img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* seção criar publi */
+.formulario-botao-azul {
+    width: 150px;
+    height: 43px;
+}
+
+#criar-publi {
+    padding: 10px;
+
+}
+
+#criar-publi>h2 {
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 700;
+
+}
+
+#criar-publi>form>textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+    /*desabilitar a redimensão do tamanho do elemento*/
+    border: var(--bord);
+
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+#criar-publi>form>textarea::placeholder {
+    color: var(--cor-preto);
+
+}
+
+
+#criar-publi>form>footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#publicacoes {
+    background-color: var(--cor-azul);
+    width: 100%;
+}
+
+#card-publi {
+    background-color: #3A4866;
+    width: 100%;
+    /*height: 600px;*/
+
+}
+
+.card-publi>header {
+    padding: 15px;
+}
+
+.card-publi>header>a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    color: var(--cor-branco);
+    text-transform: lowercase;
+}
+
+.card-publi>figure{
+
+}
+
+.imagem-descricao {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 350px;
+}
+
+.card-publi>figure>figcaption {
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 15px;
+    order: 2;
+}
+
+.descricao-publicacao {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+.interacoes-publicacao {
+    display: flex;
+    width: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*gap*/ 
+    order: 1;
+    margin-left: 15px;  
+    margin-right: 15px;
+}
+
+.interacoes-publicacao>button{
+background-color: transparent;
+border: none;
+}
+
+.card-publi>figure>button{
+    background-color: transparent;
+    border: none;
+
+    color: var(--cor-preto);
+    font-size: var(--cor-branco);
+    order: 3;
+
+    margin-left: 15px;
+}

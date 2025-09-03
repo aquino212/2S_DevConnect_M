@@ -1,80 +1,149 @@
-/* Estilos específicos da página de login/cadastro */
+main {
+  background-color: var(--cor-cinza-escuro);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.card {
-    background: #fff;
-    padding: 30px 40px;
-    border: 1px solid #dbdbdb;
-    text-align: center;
-    width: 350px;
-    margin-bottom: 10px;
-  }
+main>div {
+  background-color: var(--cor-cinza-escuro);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+
+}
+
+form {
+  background-color: rgb(0, 0, 0); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 3%;
+
+}
+
+.formularios-campos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+
+}
+
+.formulario-botao-azul {
+  width: 100%;
+}
+
+form>p {
+  text-transform: uppercase;
+  font-size: var(--tamanho-fonte-sm);
+  color: var(--cor-Branco);
+
+}
+
+form>a,#secao-cadastro>p>a {
+  color: var(--cor-Branco);
+  font-size: var(--tamanho-fonte-sm);
+  text-decoration: none;
+}
+
+
+main {
+  background: linear-gradient(#169F71, #1779AB, #1F2C38);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main>div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 3%;
+}
+
+form>p{
+  text-transform: uppercase; 
+  font-size: var(--tamanho-fonte-md);
+  color: var(--cor-cinza-escuro2);
+}
+
+form > a{
+  color: var(--cor-3);
+  font-size: var(--tamanho-fonte-sm);
+  text-decoration: none;
+}
+
+section > p > a{
+  color: var(--cor-3);
+  text-decoration: none;
+}
+
+#secao-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--tamanho-fonte-sm);
+  height: 60px;
+}
+
+.estilo-formulario {
+  width: 100%;
+  max-width: 342px;
+  background-color: var(--cor-4);
+  border: var(--borda);
+}
+
+
+#secao-instalacao{
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.formulario-campos{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ gap: 5px;
+}
+
+.formulario-botao-verde{
+ width: 100%;
+
+}
+
+.formulario-campos>input{
+height: 25px;
+color: var(--cor-cinza-escuro2);
+background-color: var(--cor-cinza-escuro4);
+border-radius: var(--borda-arredondada);
+border: var(--borda);
+}
+
+main>div>p{
+ font-size: var(--tamanho-fonte-sm);
   
-  .logo {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  input {
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-    font-size: 14px;
-  }
-  
-  .upload {
-    background: #f0f0f0;
-    color: #555;
-    cursor: pointer;
-  }
-  
-  .btn {
-    background-color: #0095f6;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #007ac1;
-  }
-  
-  .terms {
-    font-size: 12px;
-    color: #888;
-    margin-top: 15px;
-  }
-  
-  .terms a {
-    text-decoration: none;
-    color: #00376b;
-  }
-  
-  .bottom {
-    padding: 20px;
-    font-size: 14px;
-  }
-  
-  .bottom a {
-    color: #0095f6;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+}
