@@ -7,7 +7,7 @@
   --cor-cinza-escuro: #7D7D7D;
   --cor-cinza-escuro4: #D1D1D1;
 
-  --borda: 1px solid var(--cor-cinza-medio);
+  --borda: 1px solid var(--cor-preto);
   --borda-arredondada: 2px;
 
   --tamanho-fonte-lg: 20px;
@@ -25,10 +25,11 @@
   /*atribui espaços internos/externos e bordas no tamanho final do box*/
   font-family: "Segoe UI", sans-serif;
   outline-color: var(--cor-verde-claro);
+  color: white;
 }
 
 body {
-  background-color: var(--cor-cinza-claro);
+  background-color: #3A4866;
 }
 
 h1 {
