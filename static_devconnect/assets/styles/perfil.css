@@ -4,14 +4,11 @@
     height: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /*gap*/
-    order: 1;
-    margin-left: 600px;
-    margin-right: 15px;
+    justify-content: center; /* centraliza na tela */
+    margin: 0 auto 15px auto; /* centraliza horizontalmente */
 }
 
-main{
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,11 +23,13 @@ main{
 
 .topo-perfil {
     display: flex;
+    flex-wrap: wrap; /* permite quebra em telas pequenas */
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 20px;
     border-bottom: var(--borda);
     padding: 10px;
+    justify-content: center; /* centraliza os elementos */
 }
 
 #foto-bio {
@@ -44,23 +43,104 @@ main{
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
-    gap: 60px;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    gap: 20px;
     margin: 20px 0;
+    justify-content: center; /* centraliza elementos */
 }
 
 .stats span {
     font-size: 15px;
-
 }
 
-.info-perfil {
-    margin-left: 50px;
-}
-
-.E-P {
-    margin-left: 100px;
-}
-
+.info-perfil,
+.E-P,
 .sair {
-    margin-left: 70px;
+    margin: 0 10px; /* ajusta margem para responsividade */
+}
+
+/* Publicações */
+.publicacoes-p {
+    display: flex;
+    flex-direction: column; /* mantém coluna em telas menores */
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.publicacoes-p h2 {
+    margin: 0;
+}
+
+.publicacoes-p img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.publicacao-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.publicacao-header img {
+    width: 30px;
+    height: 30px;
+}
+
+.publicacao-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.publicacao-card {
+    background-color: #d3d3d3;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;      /* largura 100% */
+    max-width: 600px; /* limita o tamanho em telas grandes */
+}
+
+.publicacao-card p {
+    color: #000;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+/* MEDIA QUERIES PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    .topo-perfil, .perfil-estatic {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #foto-bio {
+        width: 100px;
+        height: 100px;
+    }
+
+    .publicacao-card {
+        padding: 10px;
+    }
+
+    .publicacao-header h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nome-perfil {
+        width: 80px;
+        height: 80px;
+    }
+
+    .publicacao-header h2 {
+        font-size: 16px;
+    }
+
+    .publicacao-card {
+        padding: 8px;
+    }
 }
