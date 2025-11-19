@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="auther" content="Felipe">
-    <meta name="description" content="Site da empresa DevConnect">
-
-    <title>Tela login - DevConnect</title>
-
-    <link rel="shortcut icon" href="../assets/images/logo-devconnect-sm.svg" type="image/x-icon">
-
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/login.css">
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login - DevConnect</title>
+   <link rel="stylesheet" href="../assets/styles/login.css">
 </head>
 
 <body>
-    <h1>Tela principal login - DevConnect</h1>
-    <main>
-        <div>
-            <form class="estilo-cadastro">
-                <img src="..//assets/images/logo-devconnect-lg.svg" alt="Logo DevConnect">
 
-                <div class="cadastro-campos">
-                    <label for="">Nome de usuário</label>
-                    <input type="text" name="" id="">
+   <main id="login-main">
 
-                </div>
+      <section class="login-container">
 
-                <div class="cadastro-campos">
-                    <label for="">Senha</label>
-                    <input type="password" name="" id="">
+         <img src="../assets/images/logo-devconnect-lg.svg" alt="Logo DevConnect" class="logo-img">
 
-                </div>
+         <p class="login-texto">
+            Acesse sua conta para continuar
+         </p>
 
-                <button class="cadastro-botao-azul">Entrar</button>
+         <form class="login-form">
 
-                <p>ou</p>
+            <div class="login-campo">
+               <label for="usuario">Nome de usuário</label>
+               <input type="text" id="usuario" placeholder="Digite seu nome de usuário">
+            </div>
 
-                <a href="#">Esqueceu a senha?</a>
+            <div class="login-campo">
+               <label for="senha">Senha</label>
+               <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
 
+            <button type="submit">Entrar</button>
 
-            </form>
+         </form>
 
-            <section id="secao-cadastro" class="estilo-cadastro">
-                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-            </section>
+         <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
 
+      </section>
 
-            <p>Obtenha o apliactivo</p>
+      <section class="cadastro-container-bottom">
+         <p>Não tem uma conta? <a href="../pages/TelaCadastro.html">Cadastre-se</a></p>
+         <a href="aula1.html" class="voltar-link">Voltar ao Início</a>
+      </section>
 
-            <section id="secao-instalacao">
-                <img src="../assets/images/app-store.svg" alt="Imagem falando da instalação no App Store">
-                <img src="../assets/images/google-play.svg" alt="Imagem falando da instalação na Play Store">
-            </section>
-        </div>
-    </main>
+   </main>
 
 </body>
-
-</html> 
+</html>
